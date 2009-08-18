@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/regex_concat.rb",
+     "regex_concat.gemspec",
      "spec/regex_concat_spec.rb",
      "spec/spec_helper.rb"
   ]
