@@ -4,17 +4,16 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "regex-concat"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.name = "regex_concat"
+    gem.summary = %Q{Concatenate regular expressions}
+    gem.description = %Q{Extends the Regexp class with a concat method, which lets you concatenate any number of regular expression objects together.}
     gem.email = "dev@caius.name"
-    gem.homepage = "http://github.com/caius/regex-concat"
+    gem.homepage = "http://github.com/caius/regex_concat"
     gem.authors = ["Caius Durling"]
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 
 rescue LoadError
-  puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
+  puts "Jeweler (or a dependency) not available. Install it with: sudo gem install technicalpickles-jeweler"
 end
 
 require 'spec/rake/spectask'
@@ -43,7 +42,7 @@ Rake::RDocTask.new do |rdoc|
   end
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "regex-concat #{version}"
+  rdoc.title = "regex_concat #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
