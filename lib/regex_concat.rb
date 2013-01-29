@@ -1,4 +1,4 @@
-module RegexpConcatenation
+module RegexConcat
   # 
   # Concatenates Regexp objects together into a new Regexp object.
   # Keeps any flags, and adds them together. <tt>//i + //m == //im</tt>
@@ -14,4 +14,4 @@ module RegexpConcatenation
   end
 end
 
-Regexp.send(:extend, RegexpConcatenation)
+Regexp.send(:extend, RegexConcat)
